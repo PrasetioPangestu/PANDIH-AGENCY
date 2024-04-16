@@ -848,7 +848,7 @@ section form button:hover {
   background-image: var(--gradient);
 }
 
-/* @media (min-width: 575px) {
+@media (min-width: 575px) {
   .container {
     max-width: 540px;
     width: 100%;
@@ -1101,9 +1101,9 @@ section form button:hover {
   .copyright {
     margin-block-end: 0;
   }
-} */
+}
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   :root {
     --fs-1: 5.5rem;
     --fs-2: 4.5rem;
