@@ -54,39 +54,4 @@ const headerActive = function () {
   }
 };
 
-// script.js
-function submitForm(event) {
-  event.preventDefault(); // Mencegah form untuk melakukan submit
-
-  // Mengambil nilai-nilai input dari form
-  var email = document.getElementById("email").value;
-  var nama = document.getElementById("nama").value;
-  var pesan = document.getElementById("pesan").value;
-
-  // Validasi form sebelum mengirim data
-  if (!validateEmail(email)) {
-    alert("Email tidak valid");
-    return;
-  }
-
-  // Kirim data ke alamat email menggunakan metode yang sesuai, misalnya Ajax atau API HTTP
-
-  // Contoh penggunaan JavaScript untuk mengirim email dengan menggunakan mailto:
-  var subject = "Form Kontak - " + nama;
-  var body =
-    "Email: " + email + "\n" + "Nama: " + nama + "\n" + "Pesan: " + pesan;
-  var mailtoLink =
-    "mailto:prasetiopangestu11@gmail.com?subject=" +
-    encodeURIComponent(subject) +
-    "&body=" +
-    encodeURIComponent(body);
-  window.location.href = mailtoLink;
-}
-
-// Validasi email menggunakan regular expression
-function validateEmail(email) {
-  var re = /\S+@\S+\.\S+/;
-  return re.test(email);
-}
-
 addEventOnElem(window, "scroll", headerActive);
