@@ -847,3 +847,7 @@ section form button:hover {
   height: 10px;
   background-image: var(--gradient);
 }
+
+@media (max-width: 767) {
+  
+}
