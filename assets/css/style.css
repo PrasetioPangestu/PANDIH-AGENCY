@@ -877,7 +877,7 @@ section form button:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   :root {
     --fs-1: 5.5rem;
     --fs-2: 3.8rem;
